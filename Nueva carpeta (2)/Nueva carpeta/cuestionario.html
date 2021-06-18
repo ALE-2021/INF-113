@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+
+* {color:#000000;transition:all 0.4s ease;}
+
+</style>
+
+<script>
+
+function resultado() {
+
+var p1, p2, p3, p4, nota;
+
+ 
+
+<!-- 1ª pregunta -->
+
+if (document.getElementById('p11').checked==true) {p1=1}
+
+if (p1==1) {document.querySelectorAll('.pregunta1')[0].style.color='#00FF00'}
+
+else {p1=0}
+
+<!-- 2ª pregunta -->
+
+if (document.getElementById('p22').checked==true) {p2=1}
+
+if (p2==1) {document.querySelectorAll('.pregunta2')[1].style.color='#00FF00'}
+
+else {p2=0}
+
+<!-- 3ª pregunta -->
+
+if (document.getElementById('p33').checked==true) {p3=1}
+
+if (p3==1) {document.querySelectorAll('.pregunta3')[2].style.color='#00FF00'}
+
+else {p3=0}
+
+<!-- 4ª pregunta -->
+
+if (document.getElementById('p44').checked==true) {p4=1}
+
+if (p4==1) {document.querySelectorAll('.pregunta4')[3].style.color='#00FF00'}
+
+else {p4=0}
+
+ 
+
+nota=p1+p2+p3+p4;
+
+document.getElementById('resultado').innerHTML="Aciertos: "+nota;
+
+rs=confirm("C o n t i n u a r . . .");
+
+if (rs==false) {document.forms[0].reset();location.reload()}
+
+}
+
+</script>
+
+</head>
+
+<body bgcolor="#9966FF">
+<center>
+<form method="get" action="../index.html">
+ <button type="submit" style='width:90px; height:50px'>REGRESAR
+</form>
+</center>
+
+<h2>AREA DE CONOCIMIENTO </h2>
+
+<hr>
+
+<form style="font:normal 16px sans-serif">
+
+<p>.&iquest;  DE QUE PAIS ES LA MORENADA ? </p>
+<p class="pregunta1"><input type="radio" name="pregunta1" id="p11">
+  Bolivia A.</p>
+
+<p class="pregunta1"><input type="radio" name="pregunta1" id="p12">
+  Peru B.</p>
+
+<p class="pregunta1"><input type="radio" name="pregunta1" id="p13">
+  Colombia C.</p>
+
+<p class="pregunta1"><input type="radio" name="pregunta1" id="p14">
+  Chile D.</p>
+
+ 
+
+<p>&iquest; EL GRUPO KJARKAS DE QUE DEPARTAMENTO DE BOLIVIA ES ? </p>
+
+<p class="pregunta2"><input type="radio" name="pregunta2" id="p21">
+  La Paz A.</p>
+
+<p class="pregunta2"><input type="radio" name="pregunta2" id="p22">
+  Cochabamba B.</p>
+
+<p class="pregunta2"><input type="radio" name="pregunta2" id="p23">
+  Oruro C.</p>
+
+<p class="pregunta2"><input type="radio" name="pregunta2" id="p24">
+  Potosi D.</p>
+
+ 
+
+<p>&iquest;LOS HIJOS DE LOS KJARKAS TIENEN UN GRUPO LLAMADO...?</p>
+
+<p class="pregunta3"><input type="radio" name="pregunta3" id="p31">
+  La BambaA.</p>
+
+<p class="pregunta3"><input type="radio" name="pregunta3" id="p32">
+  Veneno B.</p>
+
+<p class="pregunta3"><input type="radio" name="pregunta3" id="p33">
+  Chila Jatun C.</p>
+
+<p class="pregunta3"><input type="radio" name="pregunta3" id="p34">
+  Quirqui&ntilde;a D.</p>
+
+ 
+
+<p>&iquest;QUIENES FUNDARON LA AGRUPACION LOS  KJARKAS?</p>
+
+<p class="pregunta4"><input type="radio" name="pregunta4" id="p41">
+  Fabio ZambranaA.</p>
+
+<p class="pregunta4"><input type="radio" name="pregunta4" id="p42">
+  Alvaro CordovaB.</p>
+
+<p class="pregunta4"><input type="radio" name="pregunta4" id="p43">
+  Pablo Urquiso C.</p>
+
+<p class="pregunta4"><input type="radio" name="pregunta4" id="p44">
+  Los hermanos Wilson Hermosa D.</p>
+
+<hr>
+
+<h2 id="resultado">Aciertos: 0</h2>
+
+<p><input type="button" value=" R E S U L T A D O " onClick="resultado()"/></p>
+
+</form>
+
+</body>
+
+</html>
