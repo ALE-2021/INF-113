@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index/css/fondo.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+
+    <script>
+        function accionParaCuandoEllaDigaQueSi(){
+            alert('VEZ ERES FLOJA ');
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+            
+
+        }
+    </script>
+	
+
+
+</head>
+<body>
+    
+	<center><h1><font  face="Script MT Bold"> QUIERES SER MI NOVIA BB !!</font> </h1></center>
+	
+	
+    <h1><center><input type="button" onClick="accionParaCuandoEllaDigaQueSi()" id="btnSi"   value="si"   style="width:100px; height:60px; text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color:#CC3300;
+    border-radius: 6px;
+    border: 2px solid #FF6600; "/>
+	
+      <input type="button" id="btnNo" onMouseOver="mueveElBoton()" value="No" style="width:100px; height:60px;
+	  text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color:#CC3300;
+    border-radius: 6px;
+    border: 2px solid #FF6600; 
+	  
+	  " /></center></h1>
+    <center><img src="index/imagen/taz.jpg" longdesc="index/imagen/taz.jpg"></center>
+	
+
+  
+</div> 
+</body>
+</html>

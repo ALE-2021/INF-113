@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:url(../imagen/corazon.jpg);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+h1{
+color:#CC6600;
+font-size:80px;
+
+}
+  
